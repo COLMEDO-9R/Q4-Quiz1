@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container cute-box p-4 mt-5 shadow-lg text-center">
+    <h1 class="heading mb-3">💜 BMI Calculator 💜</h1>
+    <p class="subtitle mb-3">Calculate your Body Mass Index and see where you land!</p>
+
+    <details id="instructions" class="cute-details mb-4">
+      <summary>📘 Show Instructions</summary>
+      <div class="instruction-text mt-2">
+        Enter your weight (kg) and height (m). Then click "Calculate BMI" to find your category.
+      </div>
+    </details>
+
+    <div class="mb-3">
+      <input type="number" id="weight" class="form-control mb-2" placeholder="Weight in kg">
+      <input type="number" id="height" class="form-control" placeholder="Height in meters">
+    </div>
+
+    <div class="buttons mb-3">
+      <button class="btn btn-custom me-2" onclick="calculateBMI()">💖 Calculate</button>
+      <button class="btn btn-outline-light" onclick="location.reload()">🔄 Reset</button>
+    </div>
+
+    <div id="result" class="result mt-3"></div>
+    <footer class="mt-4">Cerinne Kimberlee S. Olmedo | 9-Ruby |
+      <a href="https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations" target="_blank">healthy lifestyle :)</a>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
